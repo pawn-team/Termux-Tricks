@@ -63,5 +63,5 @@ mv debian-i686 exagear-fs
 > ```bash
 > echo -e "alias ls='ls --color=auto'\ncd $HOME" > /etc/fix-profile
 > echo "source /etc/fix-profile" > /etc/profile && source /etc/fix-profile && ln -s /storage/emulated/0 /sdcard
-> apt-get update -y && apt-get upgrade -y
+> apt-get update && apt-get upgrade
 > ```
