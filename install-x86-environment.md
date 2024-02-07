@@ -16,8 +16,8 @@
 *1. Install `tar`, `wget` and `git` using a package manager:*
 
 ```bash
-yes | apt update -y && yes | apt upgrade -y
-apt install -y tar git wget
+yes | pkg upd -y && yes | pkg upg-y
+pkg install -y tar git wget
 termux-setup-storage
 ```
 
