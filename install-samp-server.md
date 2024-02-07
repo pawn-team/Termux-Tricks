@@ -1,9 +1,16 @@
-> [!Note]
+> [!Caution]
 > **Português BR:** <br />
 > Esta nota destaca a importância de usar o Termux apenas para fins de teste e aprendizado, e enfatiza a necessidade de uma VPS para um ambiente de servidor SA-MP profissional.
 >
 > **English US:** <br />
 > This note highlights the importance of using Termux for testing and learning purposes only, and emphasizes the need for a VPS for a professional SA-MP server environment.
+
+> [!Note]
+> **Português BR:** <br />
+> Esta nota destaca a obrigatoriedade do uso de um ambiente x86, você pode obtê-lo através [desse tutorial](https://github.com/pawn-team/Termux-Tricks/blob/main/install-x86-environment.md)!
+>
+> **English US:** <br />
+> This note highlights the mandatory use of an x86 environment, you can obtain it through [this tutorial](https://github.com/pawn-team/Termux-Tricks/blob/main/install-x86-environment.md)!
 
 **1. Vamos instalar o pacote: `nano`, `tar` e `wget`** <br />
 *1. Let's install the package: `nano`, `tar` and `wget`*
@@ -53,10 +60,3 @@ cd samp03
 > Use the `CTRL + C` keys to shut down the server. <br />
 > You can read the logs using the `cat server_log.txt` command. <br />
 > ExaTermux by default has a folder linked to internal memory, use the `mv` or `cp` command to move or copy a file from inside to outside and opposite too.
-
-> [!Note]
-> **Português BR:** <br />
-> Esta nota destaca a obrigatoriedade do uso de um ambiente x86, você pode obtê-lo através [desse tutorial](https://github.com/pawn-team/Termux-Tricks/blob/main/install-x86-environment.md)!
->
-> **English US:** <br />
-> This note highlights the mandatory use of an x86 environment, you can obtain it through [this tutorial](https://github.com/pawn-team/Termux-Tricks/blob/main/install-x86-environment.md)!
