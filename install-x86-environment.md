@@ -55,7 +55,7 @@ mv debian-i686 exagear-fs
 
 > [!Tip]
 > **Português BR:** <br />
-> Você precisará atualizar os pacotes assim que logar peLa primeira vez, então recomendo que use esses comandos abaixo!
+> Você precisará atualizar os pacotes assim que logar pela primeira vez, então recomendo que use esses comandos abaixo!
 >
 > **English US:** <br />
 > You will need to update the packages as soon as you log in for the first time, so I recommend using these commands below!
