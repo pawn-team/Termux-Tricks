@@ -26,6 +26,8 @@ cd samp03
 *3. We need to edit the rcon password, otherwise the server will not start:*
 
 > [!Tip]
+> ![Editing Configuration](https://raw.githubusercontent.com/pawn-team/Termux-Tricks/main/images/Screenshot_2024-02-07-01-00-58-909_com.termux.jpg)
+>
 > **Português BR:**
 > Utilize o comando `nano server.cfg`, procure por *"rcon_password"* e escreva uma senha.
 >
