@@ -61,7 +61,7 @@ mv debian-i686 exagear-fs
 > You will need to update the packages as soon as you log in for the first time, so I recommend using these commands below!
 >
 > ```bash
+> apt-get update
 > echo -e "alias ls='ls --color=auto'\ncd $HOME" > /etc/fix-profile
 > echo "source /etc/fix-profile" > /etc/profile && source /etc/fix-profile && ln -s /storage/emulated/0 /sdcard
-> apt-get update && apt-get upgrade
 > ```
