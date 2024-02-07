@@ -2,4 +2,6 @@
 Truques relacionados ao SA-MP e Open.MP usando o Termux! <br />
 Tricks related to SA-MP and Open.MP using Termux!
 
-**1. [Rodando SA-MP Server no Termux.](install-samp-server.md)
+**1. [Rodando SA-MP Server no Termux.](install-samp-server.md)**
+*1. Running SA-MP Server on Termux.*
+
