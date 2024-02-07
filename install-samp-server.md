@@ -37,6 +37,8 @@ cd samp03
 **4. Agora só precisamos iniciar o servidor:** <br />
 *4. Now we just need to start the server:*
 
+![Starting SA-MP Server](https://github.com/pawn-team/Termux-Tricks/blob/main/images/Screenshot_2024-02-07-01-36-44-173_com.termux.jpg)
+
 ```bash
 ./samp03svr
 ```
