@@ -62,6 +62,6 @@ mv debian-i686 exagear-fs
 >
 > ```bash
 > apt-get update
-> echo -e "#!/bin/bash\n\ncd $HOME\nexport DEBIAN_FRONTEND=noninteractive\nalias ls='ls --color=auto'\nln -s /storage/emulated/0/ /sdcard &> /dev/null" > /etc/profile.d/fixes.sh
+> echo -e "cd $HOME\nexport DEBIAN_FRONTEND=noninteractive\nalias ls='ls --color=auto'\nln -s /storage/emulated/0/ /sdcard &> /dev/null" > /etc/profile.d/fixes.sh
 > bash /etc/profile.d/fixes.sh
 > ```
