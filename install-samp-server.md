@@ -54,7 +54,7 @@ cd samp03
 
 > [!Note]
 > **Português BR:** <br />
-> Esta nota destaca a obrigatoriedade do uso de um ambiente x86, você pode obtê-lo através [desse tutorial](link)!
+> Esta nota destaca a obrigatoriedade do uso de um ambiente x86, você pode obtê-lo através [desse tutorial](https://github.com/pawn-team/Termux-Tricks/blob/main/install-x86-environment.md)!
 >
 > **English US:** <br />
-> This note highlights the mandatory use of an x86 environment, you can obtain it through [this tutorial](link)!
+> This note highlights the mandatory use of an x86 environment, you can obtain it through [this tutorial](https://github.com/pawn-team/Termux-Tricks/blob/main/install-x86-environment.md)!
