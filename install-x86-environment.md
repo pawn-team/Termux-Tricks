@@ -1,11 +1,11 @@
 # Exagear For Termux
 
 > [!Note]
-> **> Português BR:** <br />
+> **Português BR:** <br />
 > Versão modificada não oficial do Exagear para Termux e ambientes baseados em proot. <br />
 > O objetivo principal do projeto é alcançar a possibilidade de um ambiente estável e rápido.
 >
-> **> English U.S:** <br />
+> **English U.S:** <br />
 > Unofficial modified version of Exagear for Termux and proot-based environments. <br />
 > The main objective of the project is to achieve the possibility of a stable and fast environment.
 
