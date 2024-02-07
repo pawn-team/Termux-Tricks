@@ -16,9 +16,9 @@
 *1. Install `tar`, `wget` and `git` using a package manager:*
 
 ```bash
-apt update
-apt upgrade -y
+yes | apt update -y && yes | apt upgrade -y
 apt install -y tar git wget
+termux-setup-storage
 ```
 
 **2. Clone o repositório do [ZhymabekRoman](https://github.com/ZhymabekRoman) no diretório inicial:** <br />
