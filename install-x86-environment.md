@@ -25,25 +25,23 @@ termux-setup-storage
 *2. Clone the ZhymabekRoman repository in your home directory:*
 
 ```bash
-git clone https://github.com/ZhymabekRoman/Exagear-For-Termux $HOME/ExaTermux
+git clone https://github.com/ZhymabekRoman/Exagear-For-Termux $HOME/ExaTermux --recurse-submodules
 ```
 
-**3. Agora vamos inicializar o módulo proot-static:** <br />
-*3. Now let's initialize the proot-static module:*
+**3. Agora vamos entrar na pasta** <br />
+*3. Now let's go into the folder*
 
 ```bash
 cd $HOME/ExaTermux
-git submodule init
-git submodule update
 ```
 
 **4. Agora você precisa extrair qualquer arquivo rootfs da distribuição para a pasta `exagear-fs`.** <br />
 *4. Now you need to extract any rootfs file from the distribution to the `exagear-fs` folder.* <br />
 
 ```bash
-wget "https://github.com/termux/proot-distro/releases/download/v4.6.0/debian-i686-pd-v4.6.0.tar.xz"
-tar --warning=no-unknown-keyword --delay-directory-restore --preserve-permissions -xvf debian-i686-pd-v4.6.0.tar.xz --exclude='dev'||:
-mv debian-i686 exagear-fs
+wget "https://github.com/termux/proot-distro/releases/download/v4.7.0/debian-bookworm-i686-pd-v4.7.0.tar.xz"
+tar --warning=no-unknown-keyword --delay-directory-restore --preserve-permissions -xvf debian-bookworm-i686-pd-v4.7.0.tar.xz --exclude='dev'||:
+mv debian-bookworm-i686 exagear-fs
 ```
 
 **5. E enfim, vamos inicializar o exagear:** <br />
