@@ -1,69 +1,78 @@
-### Tutorial: Configurando banco de dados no Termux  
-**Autor**: DeviceBlack
+### Configuring the Database on Termux  
+**Autor**: *DeviceBlack*  
 
-#### 1. Atualizando e Preparando o Termux  
-Execute os seguintes comandos para garantir que o sistema esteja atualizado e o MariaDB seja instalado corretamente:  
+#### 1. Updating Termux  
+**Execute os seguintes comandos para garantir que o sistema esteja atualizado e o banco de dados seja instalado corretamente:**  
+*Run the following commands to ensure the system is updated and the database is installed correctly:*  
 ```bash
-pkg update && pkg upgrade -y
-pkg install mariadb -y
+pkg update && pkg upgrade -y  
+pkg install mariadb -y  
 ```
 
-#### 2. Inicializando o MariaDB  
-Inicialize o banco de dados do MariaDB e inicie o serviço:  
+#### 2. Initializing the Database  
+**Inicialize o banco de dados e inicie o serviço:**  
+*Initialize the database and start the service:*  
 ```bash
-mariadbd --initialize
-mariadbd-safe &
+mariadbd --initialize  
+mariadbd-safe &  
 ```
 
-#### 3. Criando o Usuário e Concedendo Permissões  
-Entre no console do MariaDB e configure o usuário:  
+#### 3. Creating User  
+**Entre no console do banco de dados e configure o usuário:**  
+*Log into the database console and configure the user:*  
 ```bash
-mariadb
+mariadb  
 
-CREATE USER 'eu_mesmo'@'localhost' IDENTIFIED BY 'minha_senha';
-GRANT ALL PRIVILEGES ON *.* TO 'eu_mesmo'@'localhost' WITH GRANT OPTION;
-FLUSH PRIVILEGES;
-EXIT;
+CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';  
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost' WITH GRANT OPTION;  
+FLUSH PRIVILEGES;  
+EXIT;  
 ```
 
-#### 4. Criando um Banco de Dados e uma Tabela  
-Conecte-se ao MariaDB com o novo usuário e configure o banco de dados e a tabela:  
+#### 4. Creating Database  
+**Conecte-se ao banco de dados com o novo usuário e configure o banco de dados e a tabela:**  
+*Connect to the database with the new user and configure the database and table:*  
 ```bash
-mariadb -u eu_mesmo -p
-# Digite a senha: minha_senha
+mariadb -u user -p  
+# Digite a senha: password  
+# Enter the password: password  
 
-CREATE DATABASE meu_banco;
-USE meu_banco;
+CREATE DATABASE test_db;  
+USE test_db;  
 
-CREATE TABLE minha_tabela (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    idade INT NOT NULL
-);
+CREATE TABLE test_table (  
+    id INT AUTO_INCREMENT PRIMARY KEY,  
+    name VARCHAR(100) NOT NULL,  
+    age INT NOT NULL  
+);  
 
-GRANT ALL PRIVILEGES ON meu_banco.minha_tabela TO 'eu_mesmo'@'localhost';
-FLUSH PRIVILEGES;
-EXIT;
+GRANT ALL PRIVILEGES ON test_db.test_table TO 'user'@'localhost';  
+FLUSH PRIVILEGES;  
+EXIT;  
 ```
 
-#### 5. Automatizando o MariaDB no Termux  
-Crie um script para iniciar o MariaDB automaticamente ao abrir o Termux:  
+#### 5. Automating  
+**Crie um script para iniciar o banco de dados automaticamente ao abrir o Termux:**  
+*Create a script to start the database automatically when opening Termux:*  
 ```bash
-echo -e "mariadbd-safe &" > $PREFIX/etc/profile.d/mariadb.sh
+echo -e "mariadbd-safe &" > $PREFIX/etc/profile.d/mariadb.sh  
 ```
 
-#### 6. Reinicie o Termux  
-Feche e reabra o Termux. Confirme se o MariaDB está em execução:  
+#### 6. Restarting Termux  
+**Feche e reabra o Termux. Confirme se o banco de dados está em execução:**  
+*Close and reopen Termux. Confirm that the database is running:*  
 ```bash
-ps aux | grep mariadb
+ps aux | grep mariadb  
 ```
 
-#### 7. Informações de Acesso  
-Após a configuração, use as seguintes credenciais para acessar o banco:  
+#### 7. Access  
+**Use as seguintes credenciais para acessar o banco de dados:**  
+*Use the following credentials to access the database:*  
 - **HOSTNAME**: localhost  
-- **USERNAME**: eu_mesmo  
-- **PASSWORD**: minha_senha  
-- **DATABASE**: meu_banco  
+- **USERNAME**: user  
+- **PASSWORD**: password  
+- **DATABASE**: test_db  
 
-#### Observação  
-Essa configuração é útil para aprendizado ou pequenos projetos locais. Para uso em produção, considere reforçar a segurança do banco de dados.
+#### Observation  
+**Essa configuração é útil para aprendizado ou pequenos projetos locais. Para uso em produção, considere reforçar a segurança do banco de dados.**  
+*This setup is useful for learning or small local projects. For production use, consider enhancing database security.*
